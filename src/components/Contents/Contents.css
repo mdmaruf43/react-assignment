@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    float: inline-start;
 }
 
 .profile-detail-container{
@@ -7,4 +8,6 @@
     border-right: 1px solid lightgray;
     margin-left: 100px;
     margin-right: 10px;
+    overflow-y: scroll;
+    height: 100vh;
 }

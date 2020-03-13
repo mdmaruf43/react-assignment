@@ -9,8 +9,8 @@ const Contents = () => {
     const [users, setUsers] = useState(first15);
     const [friendsInfomation, setFriendsInformation] = useState([]);
     const handleFriendsInformation = (user) => {
-        console.log("Add Friends", user);
-        //setFriendsInformation([...friendsInfomation, user]);
+        //console.log("Add Friends", user);
+        setFriendsInformation([...friendsInfomation, user]);
     }
     return (
         <div className="container">

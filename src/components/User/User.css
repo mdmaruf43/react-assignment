@@ -1,10 +1,13 @@
 .user{
     width: 80%;
     height: 40%;
-    background-color: #FAFAFA;
+    background-color: #ffffff;
     box-shadow: 2px 2px 5px gray;
     margin-left: 10px;
     margin-bottom: 20px;
+}
+.user h4{
+    margin: 12px 5px 12px 5px;
 }
 
 .user img{
