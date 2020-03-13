@@ -4,7 +4,7 @@ import { faCoffee, faUser, faUserPlus, } from '@fortawesome/free-solid-svg-icons
 import './User.css';
 
 const User = (props) => {
-    console.log(props.user);
+    //console.log(props);
     const {name, img, email, salary, phone, website} = props.user;
     return (
         <div>
@@ -15,7 +15,7 @@ const User = (props) => {
                 <p>Yearly Salary: ${salary}</p>
                 <p>Phone: {phone}</p>
                 <p>Website: {website}</p>
-                <button className="btn"><FontAwesomeIcon icon={faUserPlus} /> Add Friends</button>
+                <button className="btn" onClick={() => props.handleFriendsInformation(props.user)}><FontAwesomeIcon icon={faUserPlus} /> Add Friends</button>
             </div>
         </div>
     )
