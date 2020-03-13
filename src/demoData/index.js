@@ -1,7 +1,6 @@
 import users from './user';
-import photos from './photo';
 
-const fakeData = [...users, ...photos];
+const fakeData = [...users];
 
 const shuffle = a => {
     for (let i = a.length; i; i--) {
