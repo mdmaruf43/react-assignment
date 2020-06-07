@@ -3,13 +3,18 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
 import Contents from './components/Contents/Contents';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <Contents></Contents>
-    </div>
+      <Router>
+        <Header></Header>
+        <Switch>
+          <Route path="/">
+            <Contents></Contents>
+          </Route>
+        </Switch>
+      </Router>
   );
 }
 
